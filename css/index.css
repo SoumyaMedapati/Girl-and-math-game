@@ -1,0 +1,216 @@
+body{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    font-size:100%;
+    font-family:cursive;
+    left:0%;
+    top:0%;
+    margin: 0%;
+    overflow-x:hidden;
+}
+
+.papercontainer{
+    position: relative;
+    width:97%;
+    margin:0%;
+    padding:1%;
+}
+
+
+canvas#picasso{
+    margin-left:5%;
+    margin-top:4%;
+    border:2px dotted yellow;
+    cursor: pointer;
+}
+
+.clone{
+    position:relative;
+    width:90%;
+    border:1px dotted yellow;
+    height:65%;
+    margin-left:5%;
+    margin-top:3%;
+}
+
+.clone div#imgloader{
+    border:1px solid #E91E63;
+    border-radius:2px;
+    width:0%;
+    padding:0.1%;
+    margin-left:25%;
+    background:#E91E63;
+    margin-top:25%;
+}
+
+div#homepage{
+    display:none;
+}
+
+div#rules{
+    position: relative;
+    color: white;
+    width:78%;
+    margin-left:10%;
+    border:2px dotted white;
+    padding:1%;
+    margin-top:-45%;
+    z-index: 6;
+    padding-bottom: 4.3%;
+    font-size: 1.1em;
+}
+
+div#rules div{ text-align: center;margin-bottom: 1%;}
+
+
+div#rules li{ color:yellow;margin-left:25%;margin-bottom: 2%;}
+
+
+li#firstli{
+    margin-top: 4%;
+}
+
+div#cover{
+    position:absolute;z-index:0;width:78%;
+    margin-left:10%;
+    height:55%;
+    background:red;
+    opacity:0.2;
+    border:2px dotted white;
+    padding:1%;
+    margin-top:-45%;
+}
+
+div#bck{
+    position:relative;
+    width:7%;
+    cursor:pointer;
+    background:#E91E63;
+    border:1px solid white;
+    border-radius:50%;
+    margin-left: 5%;
+    margin-top:2%;
+}
+
+div#fblove{
+    width:86%;
+    padding:1%;
+    font-family: SEGOE UI;
+    text-align: center;
+    margin-left:5%;
+    margin-top:2%;
+    border:1px dotted lightblue;
+}
+
+span#fbinvite{
+    margin-left:5%;
+    color:red;
+    cursor:pointer;
+    padding:0.2%;
+    font-size:0.9em;
+    border-radius:2px;
+    border: 1px solid red;
+}
+
+div#playerintro{
+    margin-top:-35%;
+    font-size: 1.7em;
+    color:yellow;
+}
+
+div#playerintro span{
+    text-align:center;
+    padding:0.75% 2%;
+    margin-left:45%;
+    border:2px solid yellow;
+    border-bottom-left-radius: 17px;
+    border-top-right-radius: 17px;
+    cursor: pointer;
+}
+
+div#playerintro span:hover{
+    -webkit-animation : colorfade 0.5s forwards 1;
+}
+
+@-webkit-keyframes colorfade{
+    0%{color:white;background:transparent;}
+    100%{font-size: 1em; color: white;border:2px solid white;}
+}
+
+@-webkit-keyframes circleExpand{
+    0%{ width:4%;height:7%;}
+    100%{ width:150%;height:275%;left:-25%;top:-40%;}
+}
+
+.circle{
+    z-index: 1000;
+    position: absolute;
+    width: 4%;
+    height: 10%;
+    border-radius:50%;
+    background: white;
+    -webkit-animation: circleExpand 1.5s forwards ease-in-out 1; 
+}
+
+div#circle1{
+    left:47.5%;
+    top:34%;
+    display:none;
+}
+
+div#circle2{
+    left:48.5%;
+    top:56%;
+    display:none;
+}
+
+
+div#demopage{
+    display: none;
+}
+
+div#answerportal{
+    position:relative;
+    width:92%;
+    margin-left:5%;
+    margin-top:-4%;
+    z-index:10000;
+}
+
+div#answerportal input{
+    width:100%;
+    padding:2%;
+    font-size: 1.2em;
+    color:#E91E63;
+    font-family: cursive;
+    border:2px solid #E91E63;
+}
+
+div#answerportal input:focus{
+    outline: none;
+}
+
+div#score{
+    position: absolute;
+    margin-left: 86%;
+    font-size: 1.1em;
+    color:#E91E63;
+    top:17%;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0,0,255,0.2); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
